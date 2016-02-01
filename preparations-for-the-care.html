@@ -37,86 +37,121 @@
       </div>
     </header>
     <main class="container">
+      <div class="log-in-form">
+      <h2 class="index-content-title"></h2>
+      <p></p>
+      <form action="https://echo.htmlacademy.ru">
+        <label >
+          <input type="text" name="login" value="" placeholder="Логин"></label>
+        <label>
+          <input type="text" name="login" value="" placeholder="Пароль"></label>
+        <label>
+          <input type="checkbox" checked="">Запомните меня</label>
+        <a href="">Я забыл пароль!</a>
+        <button class="btn" type="submit">Войти</button>
+      </form>
+    </div>
       <h1>Средства для ухода</h1>
       <div class="breadcrumbs">
         <ul>
           <li><a class="breadcrumb" href="index.html">Главная</a></li> <!-- То же самое с крошками///Done -->
           <li><a class="breadcrumb" href="#">Магазин</a></li>
-          <li><a class="breadcrumb breadcrumb-selected" href="#">Средства для ухода</a></li>
+          <li><p class="breadcrumb breadcrumb-selected" href="#">Средства для ухода</p></li> <!-- Последний пугкт неактивен///Done -->
         </ul>
       </div>
       <div class="filter"> <!-- Очень обсуждаемо :) По семантике используется для обозначения сопутствующей информации (категории, записи, метки и т.д.). Стоит ли в него вкладывать форму с фильтром? Сам тоже об этом подумаю :) /// Done -->
-        <h2>Производители:</h2>
+        
         <form action="URL">
-          <label><input type="checbox" name="brand" value="baxter-of-california" checked>Baxter of California</label> <!-- checkbox; вместо <p> оборачивать лучше в <label>, конечно///Done -->
-          <label><input type="checbox" name="brand" value="mr-natty">Mr Natty</label>
-          <label><input type="checbox" name="brand" value="suavecito" checked>Suavecito</label>
-          <label><input type="checbox" name="brand" value="malin+goetz">Malin+Goetz</label>
-          <label><input type="checbox" name="brand" value="murray's">Murray's</label>
-          <label><input type="checbox" name="brand" value="american-crew" checked>American Crew</label>
+          <fieldset>
+            <legend>Производители:</legend>
+            <label><input type="checлbox" name="brand" value="baxter-of-california" checked>Baxter of California</label> <!-- checkbox; вместо <p> оборачивать лучше в <label>, конечно///Done -->
+            <label><input type="checkbox" name="brand" value="mr-natty">Mr Natty</label>
+            <label><input type="checkbox" name="brand" value="suavecito" checked>Suavecito</label>
+            <label><input type="checkbox" name="brand" value="malin+goetz">Malin+Goetz</label>
+            <label><input type="checkbox" name="brand" value="murray's">Murray's</label>
+            <label><input type="checkbox" name="brand" value="american-crew" checked>American Crew</label>
+            <legend>Группы товаров:</legend>
+          <!-- 3 input type="radio"///Done -->
+            <label><input type="radio" name="item-group" value="shaving-accessories">Бритвенные принадлежности</label>
+            <label><input type="radio" name="item-group" value="preparations-for-the-care">Средства для ухода</label>
+            <label><input type="radio" name="item-group" value="accessories">Аксессуары</label>
+            <button type="submit">Показать</button> <!-- Похоже на кнопку подтверждения в форме, а не на ссылку///Done -->
+          </fieldset>
         </form>
-        <h2>Группы товаров:</h2>
-        <!-- 3 input type="radio"///Done -->
-        <form action="URL">
-          <label><input type="radio" name="item-group" value="shaving-accessories">Бритвенные принадлежности</label>
-          <label><input type="radio" name="item-group" value="preparations-for-the-care">Средства для ухода</label>
-          <label><input type="radio" name="item-group" value="accessories">Аксессуары</label>
-        </form>
-        <button type="submit">Показать</button> <!-- Похоже на кнопку подтверждения в форме, а не на ссылку///Done -->
       </div>
       <div class="item-container">
         <article class="item-box"> <!-- Может объединить все карточки товара в общий контейнер? Чтоб поведение более предсказуемое было при наполнении + на будущее для гибкого размера контейнера/// Done -->
           <a href="item-baxter-of-california-travel-kit.html"><img src="img/baxter-of-california-travel-kit.png" width="250" height="150" alt='Набор для путешествий "BAXTER OF CALIFORNIA"'></a>
-          <p class="item-box-name">Набор для путешествий "BAXTER OF CALIFORNIA"</p>
+          <a href="item-baxter-of-california-travel-kit.html"> 
+            <p class="item-box-name">Набор для путешествий</p>
+            <p class="item-box-name">"BAXTER OF CALIFORNIA"</p>
+          </a> 
           <div class="item-box-price"><span>2 900 руб.</span></div> <!-- Можно спанами размечать, т.к. не отдельный полноценный абзац всё-таки. Не ошибка :)///Done --> 
-          <a href="" class="btn">Купить</a>
+          <a href="#" class="btn">Купить</a>
         </article>
         <article class="item-box">
           <a href="#">
             <img src="img/baxter-of-california-moisturizing-conditioner.png" width="250" height="150" alt='Увлажняющий кондиционер "BAXTER OF CALIFORNIA"'>
           </a>
-          <p class="item-box-name">Увлажняющий кондиционер "BAXTER OF CALIFORNIA"</p>
+          <a href="#">
+            <p class="item-box-name">Увлажняющий кондиционер</p>
+            <p class="item-box-name">"BAXTER OF CALIFORNIA"</p>
+          </a>
           <div class="item-box-price"><span>750 руб.</span></div>
-          <a href="" class="btn">Купить</a>
+          <a href="#" class="btn">Купить</a>
         </article>
         <article class="item-box">
           <a href="#">
             <img src="img/suavecito-hair-gel.png" width="250" height="150" alt='Гель для волос "SUAVECITO"'>
           </a>
-          <p class="item-box-name">Гель дляя волос "SUAVECITO"</p>
+          <a href="#">
+            <p class="item-box-name">Гель дляя волос</p>
+            <p class="item-box-name">"SUAVECITO"</p>
+          </a>  
           <div class="item-box-price"><span>290 руб.</span></div>
-          <a href="" class="btn">Купить</a>
+          <a href="#" class="btn">Купить</a>
         </article>
         <article class="item-box">
           <a href="#">
             <img src="img/american-crew-clay-hair-styling.png" width="250" height="150" alt='Глина для укладки волос "AMERICAN CREW"'>
           </a>
-          <p class="item-box-name">Глина для укладки волос "AMERICAN CREW"</p>
+          <a href="#">
+            <p class="item-box-name">Глина для укладки волос</p>
+            <p class="item-box-name">"AMERICAN CREW"</p>
+          </a>
           <div class="item-box-price"><span>500 руб.</span></div>
-          <a href="" class="btn">Купить</a>
+          <a href="#" class="btn">Купить</a>
         </article>
         <article class="item-box">
           <a href="#">
             <img src="img/american-crew-hair-gel.png" width="250" height="150" alt='Гель для волос "AMERICAN CREW"'>
           </a>
-          <p class="item-box-name">Гель для волос "AMERICAN CREW"</p>
+          <a href="#">
+            <p class="item-box-name">Гель для волос</p>
+            <p class="item-box-name">"AMERICAN CREW"</p>
+          </a>
           <div class="item-box-price"><span>300 руб.</span></div>
-          <a href="" class="btn">Купить</a>
+          <a href="#" class="btn">Купить</a>
         </article>
         <article class="item-box">
           <a href="#">
             <img src="img/baxter-of-california-shaving kit.png" width="250" height="150" alt='Набор для бритья "BAXTER OF CALIFORNIA"'>
           </a>
-          <p class="item-box-name">Набор для бритья "BAXTER OF CALIFORNIA"</p>
+          <a href="#">
+            <p class="item-box-name">Набор для бритья</p>
+            <p class="item-box-name">"BAXTER OF CALIFORNIA"</p>
+          </a>
           <div class="item-box-price"><span>3 900 руб.</span></div>
-          <a href="" class="btn">Купить</a>
+          <a href="#" class="btn">Купить</a>
         </article>
-      </div>
-      <div class="pagination">
-        <a href="#" class="btn">1</a> <!-- Пагинацию тоже лучше в отдельный блок запихнуть как независимый модуль/// Done -->
-        <a href="#" class="btn btn-selected">2</a><!-- Уже при стилизации будет видно, но всё же: для активного элемента модификатор стоит задавать двумя классами: btn btn-selected /// Done-->
-        <a href="#" class="btn">3</a>
-        <a href="#" class="btn">4</a>
+        <div class="pagination"> <!-- Пагинацию тоже лучше в отдельный блок запихнуть как независимый модуль/// Done -->
+          <ul>
+            <li><a href="#" class="btn">1</a></li>
+            <li><p class="btn btn-selected">2</p></li><!-- Уже при стилизации будет видно, но всё же: для активного элемента модификатор стоит задавать двумя классами: btn btn-selected /// Done-->
+            <li><a href="#" class="btn">3</a></li>
+            <li><a href="#" class="btn">4</a></li>
+          </ul>
+        </div>
       </div>
     </main>
     <footer class="main-footer">
