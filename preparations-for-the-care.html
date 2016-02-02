@@ -15,16 +15,16 @@
               </a>
             </li>
             <li>
-              <a href="#">Информация</a>
+              <a class="main-navigation-link"href="#">Информация</a>
             </li>
             <li>
-              <a href="#">Новости</a>
+              <a class="main-navigation-link" href="#">Новости</a>
             </li>
             <li>
-              <a href="#">Прайс-лист</a>
+              <a class="main-navigation-link" href="#">Прайс-лист</a>
             </li>
             <li>
-              <a class="main-navigation-selected" href="preparations-for-the-care.html">Магазин</a> <!-- Какой класс тогда будет у остальных ссылок? -->
+              <a class="main-navigation-link-selected" href="preparations-for-the-care.html">Магазин</a> <!-- + main-navigation-link, если есть модификатор, чтобы основные стили применить -->
             </li>
             <li>
               <a href="#">Контакты</a>
@@ -36,86 +36,120 @@
         </div>
       </div>
     </header>
-    <main class="container"> <!-- Где-то внутри ещё должен быть блок со входом в личный кабинет :) Смотри слой log in form в макете -->
+    <main class="container">
+      <div class="log-in-form">
+      <h2 class="index-content-title"></h2>
+      <p></p>
+      <form action="https://echo.htmlacademy.ru">
+        <label >
+          <input type="text" name="login" value="" placeholder="Логин"></label>
+        <label>
+          <input type="text" name="login" value="" placeholder="Пароль"></label>
+        <label>
+          <input type="checkbox" checked="">Запомните меня</label>
+        <a href="">Я забыл пароль!</a>
+        <button class="btn" type="submit">Войти</button>
+      </form>
+    </div>
       <h1>Средства для ухода</h1>
       <div class="breadcrumbs">
         <ul>
           <li><a class="breadcrumb" href="index.html">Главная</a></li>
           <li><a class="breadcrumb" href="#">Магазин</a></li>
-          <li><a class="breadcrumb breadcrumb-selected" href="#">Средства для ухода</a></li> <!-- В блоке с хлебными крошками активная страница (последний пункт) не является ссылкой и не реагирует на наведение - спецификация -->
+          <li><p class="breadcrumb breadcrumb-selected" href="#">Средства для ухода</p></li> <!-- Последний пугкт неактивен///Done /// Лучше в спан -->
         </ul>
       </div>
       <div class="filter">
-        <h2>Производители:</h2> <!-- Похоже на legend -->
-        <form action="URL"> <!-- Форма одна -->
-          <label><input type="checbox" name="brand" value="baxter-of-california" checked>Baxter of California</label> <!-- Тип так и не поправил - checKbox -->
-          <label><input type="checbox" name="brand" value="mr-natty">Mr Natty</label>
-          <label><input type="checbox" name="brand" value="suavecito" checked>Suavecito</label>
-          <label><input type="checbox" name="brand" value="malin+goetz">Malin+Goetz</label>
-          <label><input type="checbox" name="brand" value="murray's">Murray's</label>
-          <label><input type="checbox" name="brand" value="american-crew" checked>American Crew</label>
-        </form>
-        <h2>Группы товаров:</h2> <!-- Похоже на legend -->
         <form action="URL">
-          <label><input type="radio" name="item-group" value="shaving-accessories">Бритвенные принадлежности</label>
-          <label><input type="radio" name="item-group" value="preparations-for-the-care">Средства для ухода</label>
-          <label><input type="radio" name="item-group" value="accessories">Аксессуары</label>
+          <fieldset>
+            <legend>Производители:</legend>
+            <label><input type="checkbox" name="brand" value="baxter-of-california" checked>Baxter of California</label>
+            <label><input type="checkbox" name="brand" value="mr-natty">Mr Natty</label>
+            <label><input type="checkbox" name="brand" value="suavecito" checked>Suavecito</label>
+            <label><input type="checkbox" name="brand" value="malin+goetz">Malin+Goetz</label>
+            <label><input type="checkbox" name="brand" value="murray's">Murray's</label>
+            <label><input type="checkbox" name="brand" value="american-crew" checked>American Crew</label>
+            <legend>Группы товаров:</legend>
+            <label><input type="radio" name="item-group" value="shaving-accessories">Бритвенные принадлежности</label>
+            <label><input type="radio" name="item-group" value="preparations-for-the-care">Средства для ухода</label>
+            <label><input type="radio" name="item-group" value="accessories">Аксессуары</label>
+            <button type="submit">Показать</button>
+          </fieldset>
         </form>
-        <button type="submit">Показать</button>
       </div>
       <div class="item-container">
         <article class="item-box">
           <a href="item-baxter-of-california-travel-kit.html"><img src="img/baxter-of-california-travel-kit.png" width="250" height="150" alt='Набор для путешествий "BAXTER OF CALIFORNIA"'></a>
-          <p class="item-box-name">Набор для путешествий "BAXTER OF CALIFORNIA"</p> <!-- Карточка товара: название товара — это ссылка на страницу товара (название состоит из 2 строк, но по сути является одним блоком) - из спецификации -->
+          <a href="item-baxter-of-california-travel-kit.html"> 
+            <p class="item-box-name">Набор для путешествий</p>
+            <p class="item-box-name">"BAXTER OF CALIFORNIA"</p>
+          </a> 
           <div class="item-box-price"><span>2 900 руб.</span></div>
-          <a href="" class="btn">Купить</a>
+          <a href="#" class="btn">Купить</a>
         </article>
         <article class="item-box">
           <a href="#">
             <img src="img/baxter-of-california-moisturizing-conditioner.png" width="250" height="150" alt='Увлажняющий кондиционер "BAXTER OF CALIFORNIA"'>
           </a>
-          <p class="item-box-name">Увлажняющий кондиционер "BAXTER OF CALIFORNIA"</p>
+          <a href="#">
+            <p class="item-box-name">Увлажняющий кондиционер</p>
+            <p class="item-box-name">"BAXTER OF CALIFORNIA"</p>
+          </a>
           <div class="item-box-price"><span>750 руб.</span></div>
-          <a href="" class="btn">Купить</a>
+          <a href="#" class="btn">Купить</a>
         </article>
         <article class="item-box">
           <a href="#">
             <img src="img/suavecito-hair-gel.png" width="250" height="150" alt='Гель для волос "SUAVECITO"'>
           </a>
-          <p class="item-box-name">Гель дляя волос "SUAVECITO"</p>
+          <a href="#">
+            <p class="item-box-name">Гель дляя волос</p>
+            <p class="item-box-name">"SUAVECITO"</p>
+          </a>  
           <div class="item-box-price"><span>290 руб.</span></div>
-          <a href="" class="btn">Купить</a>
+          <a href="#" class="btn">Купить</a>
         </article>
         <article class="item-box">
           <a href="#">
             <img src="img/american-crew-clay-hair-styling.png" width="250" height="150" alt='Глина для укладки волос "AMERICAN CREW"'>
           </a>
-          <p class="item-box-name">Глина для укладки волос "AMERICAN CREW"</p>
+          <a href="#">
+            <p class="item-box-name">Глина для укладки волос</p>
+            <p class="item-box-name">"AMERICAN CREW"</p>
+          </a>
           <div class="item-box-price"><span>500 руб.</span></div>
-          <a href="" class="btn">Купить</a>
+          <a href="#" class="btn">Купить</a>
         </article>
         <article class="item-box">
           <a href="#">
             <img src="img/american-crew-hair-gel.png" width="250" height="150" alt='Гель для волос "AMERICAN CREW"'>
           </a>
-          <p class="item-box-name">Гель для волос "AMERICAN CREW"</p>
+          <a href="#">
+            <p class="item-box-name">Гель для волос</p>
+            <p class="item-box-name">"AMERICAN CREW"</p>
+          </a>
           <div class="item-box-price"><span>300 руб.</span></div>
-          <a href="" class="btn">Купить</a>
+          <a href="#" class="btn">Купить</a>
         </article>
         <article class="item-box">
           <a href="#">
             <img src="img/baxter-of-california-shaving kit.png" width="250" height="150" alt='Набор для бритья "BAXTER OF CALIFORNIA"'>
           </a>
-          <p class="item-box-name">Набор для бритья "BAXTER OF CALIFORNIA"</p>
+          <a href="#">
+            <p class="item-box-name">Набор для бритья</p>
+            <p class="item-box-name">"BAXTER OF CALIFORNIA"</p>
+          </a>
           <div class="item-box-price"><span>3 900 руб.</span></div>
-          <a href="" class="btn">Купить</a>
+          <a href="#" class="btn">Купить</a>
         </article>
-      </div>
-      <div class="pagination"> <!-- Лучше в список воткнуть ссылочки :) И засунуть в контейнер выше, т.к. визуально лежит в том же блоке -->
-        <a href="#" class="btn">1</a>
-        <a href="#" class="btn btn-selected">2</a> <!-- В пагинации активная страница не является ссылкой и не реагирует на наведение - спецификация -->
-        <a href="#" class="btn">3</a>
-        <a href="#" class="btn">4</a>
+        <div class="pagination">
+          <ul>
+            <li><a href="#" class="btn">1</a></li>
+            <li><p class="btn btn-selected">2</p></li><!-- Уже при стилизации будет видно, но всё же: для активного элемента модификатор стоит задавать двумя классами: btn btn-selected /// Done /// Лучше в спан-->
+            <li><a href="#" class="btn">3</a></li>
+            <li><a href="#" class="btn">4</a></li>
+          </ul>
+        </div>
       </div>
     </main>
     <footer class="main-footer">
