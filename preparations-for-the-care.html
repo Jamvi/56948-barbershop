@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Средства для ухода</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
@@ -11,7 +12,7 @@
           <ul>
             <li>
               <a href="index.html">
-                <img src="img/logo-small.png" width="250" height="50" alt="Главная">
+                <img src="img/logo-small.png" width="111" height="24" alt="Главная">
               </a>
             </li>
             <li>
@@ -24,7 +25,7 @@
               <a class="main-navigation-link" href="#">Прайс-лист</a>
             </li>
             <li>
-              <a class="main-navigation-link-selected" href="preparations-for-the-care.html">Магазин</a> <!-- + main-navigation-link, если есть модификатор, чтобы основные стили применить -->
+              <a class="main-navigation-link-selected" href="preparations-for-the-care.html">Магазин</a>
             </li>
             <li>
               <a href="#">Контакты</a>
@@ -54,42 +55,44 @@
       <h1>Средства для ухода</h1>
       <div class="breadcrumbs">
         <ul>
-          <li><a class="breadcrumb" href="index.html">Главная</a></li>
+          <li><a class="breadcrumb" href="index.html">Главная</a></li> <!-- То же самое с крошками///Done -->
           <li><a class="breadcrumb" href="#">Магазин</a></li>
-          <li><p class="breadcrumb breadcrumb-selected" href="#">Средства для ухода</p></li> <!-- Последний пугкт неактивен///Done /// Лучше в спан -->
+          <li><p class="breadcrumb breadcrumb-selected" href="#">Средства для ухода</p></li> <!-- Последний пугкт неактивен///Done -->
         </ul>
       </div>
-      <div class="filter">
+      <div class="filter"> <!-- Очень обсуждаемо :) По семантике используется для обозначения сопутствующей информации (категории, записи, метки и т.д.). Стоит ли в него вкладывать форму с фильтром? Сам тоже об этом подумаю :) /// Done -->
+        
         <form action="URL">
           <fieldset>
             <legend>Производители:</legend>
-            <label><input type="checkbox" name="brand" value="baxter-of-california" checked>Baxter of California</label>
+            <label><input type="checлbox" name="brand" value="baxter-of-california" checked>Baxter of California</label> <!-- checkbox; вместо <p> оборачивать лучше в <label>, конечно///Done -->
             <label><input type="checkbox" name="brand" value="mr-natty">Mr Natty</label>
             <label><input type="checkbox" name="brand" value="suavecito" checked>Suavecito</label>
             <label><input type="checkbox" name="brand" value="malin+goetz">Malin+Goetz</label>
             <label><input type="checkbox" name="brand" value="murray's">Murray's</label>
             <label><input type="checkbox" name="brand" value="american-crew" checked>American Crew</label>
             <legend>Группы товаров:</legend>
+          <!-- 3 input type="radio"///Done -->
             <label><input type="radio" name="item-group" value="shaving-accessories">Бритвенные принадлежности</label>
             <label><input type="radio" name="item-group" value="preparations-for-the-care">Средства для ухода</label>
             <label><input type="radio" name="item-group" value="accessories">Аксессуары</label>
-            <button type="submit">Показать</button>
+            <button type="submit">Показать</button> <!-- Похоже на кнопку подтверждения в форме, а не на ссылку///Done -->
           </fieldset>
         </form>
       </div>
       <div class="item-container">
-        <article class="item-box">
-          <a href="item-baxter-of-california-travel-kit.html"><img src="img/baxter-of-california-travel-kit.png" width="250" height="150" alt='Набор для путешествий "BAXTER OF CALIFORNIA"'></a>
+        <article class="item-box"> <!-- Может объединить все карточки товара в общий контейнер? Чтоб поведение более предсказуемое было при наполнении + на будущее для гибкого размера контейнера/// Done -->
+          <a href="item-baxter-of-california-travel-kit.html"><img src="img/baxter-of-california-travel-kit.jpg" width="220" height="165" alt='Набор для путешествий "BAXTER OF CALIFORNIA"'></a>
           <a href="item-baxter-of-california-travel-kit.html"> 
             <p class="item-box-name">Набор для путешествий</p>
             <p class="item-box-name">"BAXTER OF CALIFORNIA"</p>
           </a> 
-          <div class="item-box-price"><span>2 900 руб.</span></div>
+          <div class="item-box-price"><span>2 900 руб.</span></div> <!-- Можно спанами размечать, т.к. не отдельный полноценный абзац всё-таки. Не ошибка :)///Done --> 
           <a href="#" class="btn">Купить</a>
         </article>
         <article class="item-box">
           <a href="#">
-            <img src="img/baxter-of-california-moisturizing-conditioner.png" width="250" height="150" alt='Увлажняющий кондиционер "BAXTER OF CALIFORNIA"'>
+            <img src="img/baxter-of-california-moisturizing-conditioner.jpg" width="220" height="165" alt='Увлажняющий кондиционер "BAXTER OF CALIFORNIA"'>
           </a>
           <a href="#">
             <p class="item-box-name">Увлажняющий кондиционер</p>
@@ -100,7 +103,7 @@
         </article>
         <article class="item-box">
           <a href="#">
-            <img src="img/suavecito-hair-gel.png" width="250" height="150" alt='Гель для волос "SUAVECITO"'>
+            <img src="img/suavecito-hair-gel.jpg" width="220" height="165" alt='Гель для волос "SUAVECITO"'>
           </a>
           <a href="#">
             <p class="item-box-name">Гель дляя волос</p>
@@ -111,7 +114,7 @@
         </article>
         <article class="item-box">
           <a href="#">
-            <img src="img/american-crew-clay-hair-styling.png" width="250" height="150" alt='Глина для укладки волос "AMERICAN CREW"'>
+            <img src="img/american-crew-clay-hair-styling.jpg" width="220" height="165" alt='Глина для укладки волос "AMERICAN CREW"'>
           </a>
           <a href="#">
             <p class="item-box-name">Глина для укладки волос</p>
@@ -122,7 +125,7 @@
         </article>
         <article class="item-box">
           <a href="#">
-            <img src="img/american-crew-hair-gel.png" width="250" height="150" alt='Гель для волос "AMERICAN CREW"'>
+            <img src="img/american-crew-hair-gel.jpg" width="220" height="165" alt='Гель для волос "AMERICAN CREW"'>
           </a>
           <a href="#">
             <p class="item-box-name">Гель для волос</p>
@@ -133,7 +136,7 @@
         </article>
         <article class="item-box">
           <a href="#">
-            <img src="img/baxter-of-california-shaving kit.png" width="250" height="150" alt='Набор для бритья "BAXTER OF CALIFORNIA"'>
+            <img src="img/baxter-of-california-shaving kit.jpg" width="220" height="165" alt='Набор для бритья "BAXTER OF CALIFORNIA"'>
           </a>
           <a href="#">
             <p class="item-box-name">Набор для бритья</p>
@@ -142,10 +145,10 @@
           <div class="item-box-price"><span>3 900 руб.</span></div>
           <a href="#" class="btn">Купить</a>
         </article>
-        <div class="pagination">
+        <div class="pagination"> <!-- Пагинацию тоже лучше в отдельный блок запихнуть как независимый модуль/// Done -->
           <ul>
             <li><a href="#" class="btn">1</a></li>
-            <li><p class="btn btn-selected">2</p></li><!-- Уже при стилизации будет видно, но всё же: для активного элемента модификатор стоит задавать двумя классами: btn btn-selected /// Done /// Лучше в спан-->
+            <li><p class="btn btn-selected">2</p></li><!-- Уже при стилизации будет видно, но всё же: для активного элемента модификатор стоит задавать двумя классами: btn btn-selected /// Done-->
             <li><a href="#" class="btn">3</a></li>
             <li><a href="#" class="btn">4</a></li>
           </ul>
@@ -162,9 +165,17 @@
         </section>
         <section class="footer-social">
           <p>Давайте дружить!</p>
-          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+          <ul> <!--Социалочки списком -->
+            <li>
+              <a class="social-btn social-btn-vk" href="#"><img src="img/vk-icon.png" width="25" height="16" alt="ВКонтакте"></a>
+            </li>
+            <li>
+              <a class="social-btn social-btn-fb" href="#"><img src="img/fb-icon.png" width="12" height="22" alt="Фейсбук"></a>
+            </li>
+            <li>
+              <a class="social-btn social-btn-inst" href="#"><img src="img/instagramm-icon.png" width="21" height="21" alt="Инстаграм"></a>
+            </li>
+          </ul>
         </section>
         <section class="footer-copyright">
           <p>Разработано:</p>

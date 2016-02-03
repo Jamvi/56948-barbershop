@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Набор для путешествий "BAXTER OF CALIFORNIA"</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="main-header">
@@ -37,15 +38,14 @@
   </header>
   <main class="container">
     <div class="log-in-form">
-      <h2 class="index-content-title"></h2> <!-- Личный кабинет -->
-      <p></p> <!-- Введите... -->
+      <h2 class="index-content-title"></h2>
+      <p></p>
       <form action="https://echo.htmlacademy.ru">
-        <label >
-          <input type="text" name="login" value="" placeholder="Логин"></label> <!-- Лейблов вроде и нет :) -->
-        <label>
-          <input type="text" name="login" value="" placeholder="Пароль"></label>
-        <label>
-          <input type="checkbox" checked="">Запомните меня</label>
+        <input type="text" name="login" value="" placeholder="Логин">
+        <!-- Лейблов вроде и нет :)/// Done -->
+        <input type="text" name="login" value="" placeholder="Пароль">
+        <p>
+          <input type="checkbox" checked="">Запомните меня</p>
         <a href="">Я забыл пароль!</a>
         <button class="btn" type="submit">Войти</button>
       </form>
@@ -57,6 +57,7 @@
         <li>
           <a class="breadcrumb" href="index.html">Главная</a>
         </li>
+        <!-- не попал крошками в ссылки :) Или так было задумано? ///Done-->
         <li>
           <a class="breadcrumb" href="#">Магазин</a>
         </li>
@@ -66,26 +67,28 @@
         <li>
           <p class="breadcrumb breadcrumb-selected" href="item-baxter-of-california-travel-kit.html">Набор для путешествий "BAXTER OF CALIFORNIA"</p>
         </li>
-      </ul>
+        <!-- Последний пункт не ссылка \\\ Done--> </ul>
     </div>
     <div class="item-content">
+      <!-- Контент завернут в отдельный контейнер, колонки - тоже -->
       <div class="item-photo-container">
         <section class="item-photo">
+          <!-- Похоже на английский, но всё-таки транслит :) ///Done-->
           <div class="item-photo-selected">
             <a href="#">
-              <img src="img/baxter-of-california-travel-kit-1.png" width="350" height="550" alt="Фото 1"></a>
+              <img src="img/baxter-of-california-travel-kit-1.jpg" width="460" height="498" alt="Фото 1"></a>
           </div>
           <div class="item-photo">
             <a href="">
-              <img src="img/baxter-of-california-travel-kit-2.png" width="250" height="150" alt="Фото 2"></a>
+              <img src="img/baxter-of-california-travel-kit-2.jpg" width="140" height="149" alt="Фото 2"></a>
           </div>
           <div class="item-photo">
             <a href="">
-              <img src="img/baxter-of-california-travel-kit-3.png" width="250" height="150" alt="Фото 3"></a>
+              <img src="img/baxter-of-california-travel-kit-3.jpg" width="140" height="149" alt="Фото 3"></a>
           </div>
           <div class="item-photo">
             <a href="">
-              <img src="img/baxter-of-california-travel-kit-4.png" width="250" height="150" alt="Фото 4"></a>
+              <img src="img/baxter-of-california-travel-kit-1.jpg" width="140" height="149" alt="Фото 4"></a>
           </div>
         </section>
       </div>
@@ -94,12 +97,14 @@
         <section class="item-features">
           <p>Есть в наличии</p>
           <p class="vendor-code">Артикул: Dexter-AE</p>
+          <!-- Нужен ли здесь класс для крошек? Кроме цвета применятся и другие свойства ///Done-->
           <p>
             Travel Kit - необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.
           </p>
         </section>
         <section class="item-price">
           <span class="item-box-price">2 900 руб.</span>
+          <!-- Можно просто в спан обернуть без родительского дива и параграфа, чтобы не плодить теги. Не ошибка, но рекомендация :) ///Done-->
           <a href="#" class="btn">Купить</a>
         </section>
         <section class="item-composition">
@@ -127,14 +132,18 @@
       <section class="footer-social">
         <p>Давайте дружить!</p>
         <ul>
+          <!--Социалочки списком -->
           <li>
-            <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+            <a class="social-btn social-btn-vk" href="#">
+              <img src="img/vk-icon.png" width="25" height="16" alt="ВКонтакте"></a>
           </li>
           <li>
-            <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+            <a class="social-btn social-btn-fb" href="#">
+              <img src="img/fb-icon.png" width="12" height="22" alt="Фейсбук"></a>
           </li>
           <li>
-            <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+            <a class="social-btn social-btn-inst" href="#">
+              <img src="img/instagramm-icon.png" width="21" height="21" alt="Инстаграм"></a>
           </li>
         </ul>
       </section>

@@ -1,0 +1,21 @@
+body {
+	font-size: 14px;
+	line-height: 24px;
+	color: black; /*Лучше задавать цвета в HEX/RGB формате*/
+	font-weight: 700;
+	font-family: PTSansNarrowBold; /*Сверяй название шрифта тут www.google.com/fonts и в кавычки бери те, что пишутся не в одно слово*/
+}
+
+h1 { 
+	font-size: 30px;
+	color: black;
+	font-weight: 700;
+	font-family: PTSansNarrowBold;
+}
+
+h2 {
+	font-size: 24px;
+	color: black;
+	font-weight: 700;
+	font-family: PTSansNarrowBold;
+}
