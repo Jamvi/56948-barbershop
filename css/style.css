@@ -90,6 +90,24 @@ h2 {
 	margin-right: 0;
 }
 
+.item-photo-container {
+	width: 460px;
+	min-height: 670px;
+	float: left;
+	margin-bottom: 50px;
+}
+
+.item-description-container {
+	width: 380px;
+	min-height: 505px;
+	float: right;
+}
+
+.item-photo {
+	display: inline-block;
+	
+}
+
 .features {
   margin-bottom: 80px;
 }
