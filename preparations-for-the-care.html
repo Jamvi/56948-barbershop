@@ -7,14 +7,12 @@
   </head>
   <body>
     <header class="main-header">
-      <div class="container">
+      <div class="container clearfix">
         <nav class="main-navigation">
-          <ul>
-            <li>
-              <a href="index.html">
+          <a href="index.html">
                 <img src="img/logo-small.png" width="111" height="24" alt="Главная">
               </a>
-            </li>
+          <ul>
             <li>
               <a class="main-navigation-link"href="#">Информация</a>
             </li>
@@ -37,27 +35,27 @@
         </div>
       </div>
     </header>
-    <main class="container">
+    <main class="container clearfix">
       <div class="log-in-form">
-      <h2 class="index-content-title"></h2>
-      <p></p>
-      <form action="https://echo.htmlacademy.ru">
-        <label >
-          <input type="text" name="login" value="" placeholder="Логин"></label>
-        <label>
-          <input type="text" name="login" value="" placeholder="Пароль"></label>
-        <label>
-          <input type="checkbox" checked="">Запомните меня</label>
-        <a href="">Я забыл пароль!</a>
-        <button class="btn" type="submit">Войти</button>
-      </form>
-    </div>
+        <h2 class="index-content-title">Личный кабинет</h2>
+        <p>Введите пожалуйста свой логин и пароль</p>
+        <form action="https://echo.htmlacademy.ru">
+          <label >
+            <input type="text" name="login" value="" placeholder="Логин"></label>
+          <label>
+            <input type="text" name="login" value="" placeholder="Пароль"></label>
+          <label>
+            <input type="checkbox" checked="">Запомните меня</label>
+          <a href="">Я забыл пароль!</a>
+          <button class="btn" type="submit">Войти</button>
+        </form>
+      </div>
       <h1>Средства для ухода</h1>
       <div class="breadcrumbs">
         <ul>
           <li><a class="breadcrumb" href="index.html">Главная</a></li> <!-- То же самое с крошками///Done -->
           <li><a class="breadcrumb" href="#">Магазин</a></li>
-          <li><p class="breadcrumb breadcrumb-selected" href="#">Средства для ухода</p></li> <!-- Последний пугкт неактивен///Done -->
+          <li><p class="breadcrumb breadcrumb-selected">Средства для ухода</p></li> <!-- Последний пугкт неактивен///Done -->
         </ul>
       </div>
       <div class="filter"> <!-- Очень обсуждаемо :) По семантике используется для обозначения сопутствующей информации (категории, записи, метки и т.д.). Стоит ли в него вкладывать форму с фильтром? Сам тоже об этом подумаю :) /// Done -->
@@ -65,7 +63,7 @@
         <form action="URL">
           <fieldset>
             <legend>Производители:</legend>
-            <label><input type="checлbox" name="brand" value="baxter-of-california" checked>Baxter of California</label> <!-- checkbox; вместо <p> оборачивать лучше в <label>, конечно///Done -->
+            <label><input type="checkbox" name="brand" value="baxter-of-california" checked>Baxter of California</label> <!-- checkbox; вместо <p> оборачивать лучше в <label>, конечно///Done -->
             <label><input type="checkbox" name="brand" value="mr-natty">Mr Natty</label>
             <label><input type="checkbox" name="brand" value="suavecito" checked>Suavecito</label>
             <label><input type="checkbox" name="brand" value="malin+goetz">Malin+Goetz</label>
@@ -73,10 +71,10 @@
             <label><input type="checkbox" name="brand" value="american-crew" checked>American Crew</label>
             <legend>Группы товаров:</legend>
           <!-- 3 input type="radio"///Done -->
-            <label><input type="radio" name="item-group" value="shaving-accessories">Бритвенные принадлежности</label>
-            <label><input type="radio" name="item-group" value="preparations-for-the-care">Средства для ухода</label>
-            <label><input type="radio" name="item-group" value="accessories">Аксессуары</label>
-            <button type="submit">Показать</button> <!-- Похоже на кнопку подтверждения в форме, а не на ссылку///Done -->
+            <label><input type="radio" name="shaving-accessories" value="shaving-accessories">Бритвенные принадлежности</label>
+            <label><input type="radio" name="preparations-for-the-care" value="preparations-for-the-care" checked>Средства для ухода</label>
+            <label><input type="radio" name="accessories" value="accessories">Аксессуары</label>
+            <button type="button">Показать</button> <!-- Похоже на кнопку подтверждения в форме, а не на ссылку///Done -->
           </fieldset>
         </form>
       </div>
@@ -156,7 +154,7 @@
       </div>
     </main>
     <footer class="main-footer">
-      <div class="container">
+      <div class="container clearfix">
         <section class="footer-contacts">
           Барбершоп «Бородинский»<br>
           Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>

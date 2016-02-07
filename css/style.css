@@ -60,8 +60,46 @@ h2 {
   margin-bottom: 25px;
 }
 
+.breadcrumbs {
+	width: 500px;
+	min-height: 65px;
+	margin-bottom: 60px;
+}
+
+.filter {
+	width: 180px;
+	min-height: 570px;
+	float: left;
+}
+
+.item-container {
+	width: 700px;
+	min-height: 680px;
+	float: right;
+}
+
+.item-box {
+	width: 220px;
+	min-height: 286px;
+	margin-right: 20px;
+	float: left;
+	margin-bottom: 20px;
+}
+
+.item-box:nth-child(3n) {
+	margin-right: 0;
+}
+
 .features {
   margin-bottom: 80px;
+}
+
+.log-in-form {
+  width: 460px;
+  min-height: 385px;
+  margin-right: auto;
+  margin-left: auto;
+  display: none; 
 }
 
 .features-item {
