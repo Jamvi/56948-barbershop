@@ -53,39 +53,37 @@
       <h1>Средства для ухода</h1>
       <div class="breadcrumbs">
         <ul>
-          <li><a class="breadcrumb" href="index.html">Главная</a></li> <!-- То же самое с крошками///Done -->
+          <li><a class="breadcrumb" href="index.html">Главная</a></li>
           <li><a class="breadcrumb" href="#">Магазин</a></li>
-          <li><p class="breadcrumb breadcrumb-selected">Средства для ухода</p></li> <!-- Последний пугкт неактивен///Done -->
+          <li><p class="breadcrumb breadcrumb-selected">Средства для ухода</p></li> <!-- Последний пугкт неактивен///Done /// Лучше спан -->
         </ul>
       </div>
-      <div class="filter"> <!-- Очень обсуждаемо :) По семантике используется для обозначения сопутствующей информации (категории, записи, метки и т.д.). Стоит ли в него вкладывать форму с фильтром? Сам тоже об этом подумаю :) /// Done -->
-        
+      <div class="filter">
         <form action="URL">
           <fieldset>
             <legend>Производители:</legend>
-            <label><input type="checkbox" name="brand" value="baxter-of-california" checked>Baxter of California</label> <!-- checkbox; вместо <p> оборачивать лучше в <label>, конечно///Done -->
+            <label><input type="checkbox" name="brand" value="baxter-of-california" checked>Baxter of California</label>
             <label><input type="checkbox" name="brand" value="mr-natty">Mr Natty</label>
             <label><input type="checkbox" name="brand" value="suavecito" checked>Suavecito</label>
             <label><input type="checkbox" name="brand" value="malin+goetz">Malin+Goetz</label>
             <label><input type="checkbox" name="brand" value="murray's">Murray's</label>
             <label><input type="checkbox" name="brand" value="american-crew" checked>American Crew</label>
             <legend>Группы товаров:</legend>
-          <!-- 3 input type="radio"///Done -->
             <label><input type="radio" name="shaving-accessories" value="shaving-accessories">Бритвенные принадлежности</label>
             <label><input type="radio" name="preparations-for-the-care" value="preparations-for-the-care" checked>Средства для ухода</label>
             <label><input type="radio" name="accessories" value="accessories">Аксессуары</label>
-            <button type="button">Показать</button> <!-- Похоже на кнопку подтверждения в форме, а не на ссылку///Done -->
+            <button type="button">Показать</button>
           </fieldset>
         </form>
       </div>
-      <div class="item-container">
-        <article class="item-box"> <!-- Может объединить все карточки товара в общий контейнер? Чтоб поведение более предсказуемое было при наполнении + на будущее для гибкого размера контейнера/// Done -->
+      <div class="item-container"> <!-- Из-за то, что все карточки товаров зафлоачены и выпали из потока, при наведении на этот контейнер всю его величину задаёт пагинация снизу, попробуй навести и кликнуть на любой товар :) Так что лучше закинуть все артиклы в один большой контейнер именно для них, а этот использовать как колонку справа от формы фильтра -->
+        <article class="item-box">
           <a href="item-baxter-of-california-travel-kit.html"><img src="img/baxter-of-california-travel-kit.jpg" width="220" height="165" alt='Набор для путешествий "BAXTER OF CALIFORNIA"'></a>
           <a href="item-baxter-of-california-travel-kit.html"> 
             <p class="item-box-name">Набор для путешествий</p>
             <p class="item-box-name">"BAXTER OF CALIFORNIA"</p>
           </a> 
-          <div class="item-box-price"><span>2 900 руб.</span></div> <!-- Можно спанами размечать, т.к. не отдельный полноценный абзац всё-таки. Не ошибка :)///Done --> 
+          <div class="item-box-price"><span>2 900 руб.</span></div>
           <a href="#" class="btn">Купить</a>
         </article>
         <article class="item-box">
@@ -143,10 +141,10 @@
           <div class="item-box-price"><span>3 900 руб.</span></div>
           <a href="#" class="btn">Купить</a>
         </article>
-        <div class="pagination"> <!-- Пагинацию тоже лучше в отдельный блок запихнуть как независимый модуль/// Done -->
+        <div class="pagination">
           <ul>
             <li><a href="#" class="btn">1</a></li>
-            <li><p class="btn btn-selected">2</p></li><!-- Уже при стилизации будет видно, но всё же: для активного элемента модификатор стоит задавать двумя классами: btn btn-selected /// Done-->
+            <li><p class="btn btn-selected">2</p></li><!-- Уже при стилизации будет видно, но всё же: для активного элемента модификатор стоит задавать двумя классами: btn btn-selected /// Done /// Лучше спан-->
             <li><a href="#" class="btn">3</a></li>
             <li><a href="#" class="btn">4</a></li>
           </ul>
@@ -163,7 +161,7 @@
         </section>
         <section class="footer-social">
           <p>Давайте дружить!</p>
-          <ul> <!--Социалочки списком -->
+          <ul>
             <li>
               <a class="social-btn social-btn-vk" href="#"><img src="img/vk-icon.png" width="25" height="16" alt="ВКонтакте"></a>
             </li>
